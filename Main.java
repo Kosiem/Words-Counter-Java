@@ -30,16 +30,16 @@ public class Main {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               String count =  newText.getText();
-               String words[] = count.split(" ");
-               int numberOfWords = words.length;
+                String count =  newText.getText();
+                String words[] = count.split(" ");
+                int numberOfWords = words.length;
 
-               JTextArea result = new JTextArea();
-               result.setText("Number of words: " + numberOfWords);
+                JTextArea result = new JTextArea();
+                result.setText("Number of words: " + numberOfWords);
 
-               panel.add(result,BorderLayout.EAST);
-               panel.revalidate();
-               panel.repaint(); // this two functions are neccesarry to refresh panel and textArea with result
+                panel.add(result,BorderLayout.EAST);
+                panel.revalidate();
+                panel.repaint(); // this two functions are neccesarry to refresh panel and textArea with result
 
             }
         });
